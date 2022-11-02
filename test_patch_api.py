@@ -3,7 +3,7 @@ import pytest
 import requests
 import json
 
-def test_post_data(supply_url):
+def test_patch_data(supply_url):
 	url = supply_url + "/users/2" 
 	data = {'name':'morpheus','job':'zion resident'}
 	resp = requests.patch(url, data=data)
