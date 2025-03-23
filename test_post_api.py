@@ -4,7 +4,7 @@ import requests
 import json
 def test_post_data(supply_url):
 	url = supply_url + "/users/" 
-	data = {'name':'morpheus','job':'leader'}
+	data = {'name':'testname','job':'leader'}
 	resp = requests.post(url, data=data)
 	j = json.loads(resp.text)
 	assert resp.status_code == 201, resp.text
